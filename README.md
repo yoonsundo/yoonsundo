@@ -99,6 +99,16 @@ const thundo = {
   <img src="https://img.shields.io/badge/AI_%ED%8C%80%EC%9B%90-Codex-412991?style=flat-square" alt="Codex" />
 </p>
 
+## 🔥 연속 기여
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=yoonsundo&locale=ko&border_radius=12&background=0D1117&border=30363D&stroke=30363D&ring=8B5CF6&fire=C6F84E&currStreakNum=C6F84E&currStreakLabel=C6F84E&sideNums=E6EDF3&sideLabels=A78BFA&dates=8B949E" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=yoonsundo&locale=ko&border_radius=12&background=FFFFFF&border=D0D7DE&stroke=D0D7DE&ring=7C3AED&fire=FF4D9D&currStreakNum=7C3AED&currStreakLabel=7C3AED&sideNums=1F2328&sideLabels=6D28D9&dates=656D76" />
+    <img alt="GitHub 총 기여 수와 연속 기여 기록" src="https://streak-stats.demolab.com?user=yoonsundo&locale=ko&border_radius=12&background=FFFFFF&border=D0D7DE&stroke=D0D7DE&ring=7C3AED&fire=FF4D9D&currStreakNum=7C3AED&currStreakLabel=7C3AED&sideNums=1F2328&sideLabels=6D28D9&dates=656D76" />
+  </picture>
+</p>
+
 ## 🐍 잔디 먹는 뱀
 
 <p align="center">
