@@ -1,0 +1,39 @@
+# 기여 그래프(잔디)를 먹는 뱀 애니메이션을 그려 output 브랜치에 올립니다.
+# README 는 raw.githubusercontent.com/<user>/<user>/output/*.svg 를 참조합니다.
+name: 잔디 먹는 뱀
+
+on:
+  schedule:
+    - cron: "0 15 * * *" # 매일 00:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 뱀 SVG 생성
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=#FF4D9D&color_dots=#EBEDF0,#DDD6FE,#C4B5FD,#8B5CF6,#6D28D9
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#C6F84E&color_dots=#161B22,#2E1065,#5B21B6,#7C3AED,#A78BFA
+
+      - name: output 브랜치에 배포
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: 뱀 애니메이션 갱신"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
