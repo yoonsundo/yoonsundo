@@ -1,5 +1,6 @@
 # 기여 그래프(잔디)를 먹는 뱀 애니메이션을 그려 output 브랜치에 올립니다.
 # README 는 raw.githubusercontent.com/<user>/<user>/output/*.svg 를 참조합니다.
+# 색은 프로필 패널과 같은 검정·라임(#C6F84E). 라이트는 검은 뱀, 다크는 흰 뱀.
 name: 잔디 먹는 뱀
 
 on:
@@ -26,8 +27,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#FF4D9D&color_dots=#EBEDF0,#DDD6FE,#C4B5FD,#8B5CF6,#6D28D9
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#C6F84E&color_dots=#161B22,#2E1065,#5B21B6,#7C3AED,#A78BFA
+            dist/github-snake.svg?color_snake=#050505&color_dots=#EBEDF0,#E4FBB0,#C6F84E,#8DB82A,#3F5512
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#FFFFFF&color_dots=#161B22,#3B4A16,#6E8F24,#9CCB36,#C6F84E
 
       - name: output 브랜치에 배포
         uses: crazy-max/ghaction-github-pages@v5
